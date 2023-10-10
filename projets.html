@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetcs</title>
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+	<link rel="stylesheet" href="stylepro.css">
+</head>
+<body>
+  <section class="navbar">
+    <div class="logo">
+      <img src="log3.jpg.png" alt="">
+    </div>
+
+    <div class="togglebtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="navlinks">
+      <li><a href="portfolio2.html">Home</a></li>
+      <li><a href="à propos.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>    
+  </section>
+
+  <section class="container">
+
+    <div class="sopogec">
+      <div class="img">
+        
+      </div>
+      <br>
+      <h2>SOPOGEC.Sarl</h2>
+      <br>
+      <div class="btn">
+        <a href="sopogec.online">Show more</a>
+      </div>
+    </div>
+
+    <div class="sopogec">
+      <div class="img2">
+        
+      </div>
+      <br>
+      <h2>Générateur de factures</h2>
+      <br>
+      <div class="btn">
+        <a href="#">Show more</a>
+      </div>
+    </div>
+
+
+
+    <script>
+      /* creating button click show hide navebar */
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+      var links=document.querySelector(".navlinks li");
+  
+      togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      })
+    </script>
+  </section>

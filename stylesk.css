@@ -1,0 +1,327 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-image: url(teinture\ m.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  font-family: sans-serif;
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.navbar{
+  width: 86%;
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+
+.navbar .logo{
+  width: 160px;
+  cursor: pointer;
+  margin-left: -2%;
+  margin-top: 8px;
+}
+
+.navbar .togglebtn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 45px;
+  right: 3%;
+  z-index: 5;
+  cursor: pointer;
+  display: none; 
+  
+}
+
+.navbar .togglebtn span{
+  display: block;
+  background-color: rgb(255, 102, 0);
+  margin: 5px 0px;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+}
+
+ul{
+  margin-top: 30px;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 16px;
+}
+
+ul li a{
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: darkslategray;
+  margin-top: 30px;
+  transition: 0.4s ease;
+}
+
+ul li a:hover{
+  color: darkorange;
+}
+
+
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.dev div i {
+	background-color: rgb(0, 162, 255);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.dev div {
+	text-align: center;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.dev h2 {
+  justify-content: center;
+	text-align: center;
+	font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dev h4 {
+	text-align: center;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dev {
+  width: 400px;
+ 
+}
+
+.dev .btn{
+  background-color: darkorange;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: .4s ease;
+}
+
+.dev .btn:hover{
+  background-color: rgb(0, 153, 255);
+
+}
+
+.tech{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.tech .icons{
+  display: flex;
+  justify-content: space-between;
+  animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.tech div i {
+	background-color: rgb(0, 162, 255);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-html5 {
+	background-color: rgb(255, 81, 0);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-php {
+	background-color: rgb(191, 9, 197);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-git {
+	background-color: rgb(223, 26, 52);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-js {
+	background-color: rgb(251, 255, 0);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-symfony {
+	background-color: #555;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-react {
+	background-color: rgb(0, 162, 255);;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.tech div .fa-bootstrap {
+	background-color: rgb(143, 15, 126);
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.anim {
+  transition: 1s ease;
+}
+
+.anim:hover{
+  scale: 1.5;
+}
+
+/* responsive design et displaying navbar for small screen */
+@media(max-width:930px)
+{
+  .navbar .togglebtn{
+    display: initial;
+  }
+  /* for toggle button */
+  .click {
+    top:45px;
+  }
+  .click span {
+    position: absolute;
+    margin-top: 12px;
+  }
+  .click span:first-child{
+    transform: rotate(-45deg);
+  }
+  .click span:nth-child(2){
+    opacity: 0;
+    margin: 0;
+  }
+  .navbar .navlinks{
+    position: absolute;
+    top: 110px;
+    right: -100%;
+    bottom: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #222;
+    z-index: 3;
+    box-shadow: 5px 13px 30px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+    padding: 25px 0px;
+  }
+  .navbar .navlinks li{
+    display: block;
+  }
+  .navbar .navlinks li a{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .navbar .navlinks.open{
+    right: 0;
+  }
+}
+
+@media(max-width:768px)
+{
+  body{
+    height: 300vh;
+    width: 100%;
+  }
+  .container{
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .dev{
+    padding: 40px 0px;
+    margin-left: 40px;
+  }
+  
+
+  
+}
