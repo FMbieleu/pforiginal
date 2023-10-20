@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franck Mbieleu - Freelance frontent developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+	<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/log3.jpg.png" alt="">
+      </div>
+
+      <div class="togglebtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="navlinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="à propos.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projets.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="image">
+        <img src="img/fm1.png" class="boy">
+      </div>
+      <div class="hero-text">
+        <div class="info">
+          <h3>Hey, I am <span>Franck</span>.</h3>
+          <h1><span>W</span>EB <span>D</span>EVELOPER</h1>
+          <h3>Web developer and web designer without borders. <br>
+            I create websites to enhance your online business.
+          </h3>
+          <a href="#">Hire me</a>
+        </div>
+
+        
+
+        <div class="icons">
+          <a href="https://x.com/FMbieleu?t=P0q2qvxeblAmE4sF9ya0qg&s=08"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/franck-mbieleu-923a21207"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      
+    </div>
+
+  <script>
+    /* creating button click show hide navebar */
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+  </script>
+  
+</body>
+</html>
